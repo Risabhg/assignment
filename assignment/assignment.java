@@ -41,40 +41,40 @@ public class assignment {
 		 String marks ="(.*[%,!,),(].*)";
 		if(x.length()<6)
 		{
-			System.out.println(x+"  "+":"+"Failure"+","+"password must be at least 6 characters long");
+			System.out.println(x+"  "+"Failure"+" "+"password must be at least 6 characters long");
 		}
 		else if(x.length()>12)
 		{
-			System.out.println(x+"  "+":"+"Failure"+","+"password length must be be less than 13 characters");
+			System.out.println(x+"  "+"Failure"+" "+"password length must be be less than 13 characters");
 		}
 		   
 		else if (!x.matches(upperCaseChars ))
            {
-                   System.out.println(x+"  "+":"+"Failure"+","+"Password should contain atleast one upper case alphabet");
+                   System.out.println(x+"  "+"Failure"+" "+"Password should contain atleast one upper case alphabet");
                   
            }
           
 		else if (!x.matches(lowerCaseChars ))
            {
-                   System.out.println(x+"  "+ ":"+"Failure"+","+"Password should contain atleast one lower case alphabet");
+                   System.out.println(x+"  "+"Failure"+" "+"Password should contain atleast one lower case alphabet");
                   
            }
           
 		else if (!x.matches(numbers ))
            {
-                   System.out.println(x+"  "+":"+"Failure"+","+"Password should contain atleast one number.");
+                   System.out.println(x+"  "+"Failure"+" "+"Password should contain atleast one number.");
                    
            }
 		else if(!x.matches(specialChars))
 		{
-			 System.out.println(x+"  "+":"+"Failure"+","+"Password must contain at least one from @,#,$,*,_,=.");
+			 System.out.println(x+"  "+"Failure"+" "+"Password must contain at least one from @,#,$,*,_,=.");
 		}
 		else if(x.matches(marks))
 		{
-			System.out.println(x+"  "+":"+"Failure"+","+"Password must not contain %,!,),(");
+			System.out.println(x+"  "+"Failure"+" "+"Password must not contain %,!,),(");
 		}
 		else
-			System.out.println(x+"  "+":"+"Success");
+			System.out.println(x+"  "+"Success");
 	}
 	
 }
